@@ -1,0 +1,155 @@
+.btn-style702 {
+  position: relative;
+  background: rgb(225, 9, 225);
+  border: 1px solid #bf7b7b;
+  color: #fff;
+  overflow: hidden;
+  display: inline-block;
+  padding: 10px 25px;
+  border-radius: 6px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+/* line animation */
+.btn-style702::before {
+  width: 0;
+  height: 4.5px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  transition: all 0.35s;
+  content: "";
+  z-index: 2;
+}
+
+/* hover slide background */
+.btn-style702::after {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgb(136, 13, 223);
+  transform: translateY(-100%);
+  transition: all 0.35s;
+  content: attr(data-hover);
+  z-index: 1;
+  border-radius: 6px;
+}
+
+/* hover effects */
+.btn-style702:hover::before {
+  width: 100%;
+}
+
+.btn-style702:hover::after {
+  transform: translateY(0);
+}
+
+.btn-style703 {
+  position: relative;
+  background: rgb(136, 13, 223);
+  border: 1px solid #bf7b7b;
+  color: #fff;
+  overflow: hidden;
+  display: inline-block;
+  padding: 10px 25px;
+  border-radius: 6px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+/* line animation */
+.btn-style703::before {
+  width: 0;
+  height: 4.5px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  transition: all 0.35s;
+  content: "";
+  z-index: 2;
+}
+
+/* hover slide background */
+.btn-style703::after {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color:rgb(225, 9, 225);
+  transform: translateY(-100%);
+  transition: all 0.35s;
+  content: attr(data-hover);
+  z-index: 1;
+  border-radius: 6px;
+}
+
+/* hover effects */
+.btn-style703:hover::before {
+  width: 100%;
+}
+
+.btn-style703:hover::after {
+  transform: translateY(0);
+}
+
+
+/* animation */
+
+@keyframes fadeSlide {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  20%, 30% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  45%, 100% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}
+
+
+/*  */
+
+.text-box {
+  padding-left: 260px;
+  padding-top: 20px;
+}
+
+.slide {
+  opacity: 0;
+  transform: translateX(-60px);
+  animation: slideIn 0.8s ease forwards;
+}
+
+.delay-0 { animation-delay: 0s; }
+.delay-2 { animation-delay: 2s; }
+.delay-4 { animation-delay: 4s; }
+.delay-6 { animation-delay: 6s; }
+
+.author {
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+/* Keyframes */
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+/*  */
