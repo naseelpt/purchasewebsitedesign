@@ -48,7 +48,7 @@ function Navbar() {
         </div>
       )}
     </div>
-                <a href="/quick"> Quick enguiry</a>
+                <Link to={'/quick'}><h1> Quick enguiry</h1></Link>
 
                 <div className="hidden lg:flex items-center text-sm gap-2 border border-gray-300 px-3 rounded-full">
                     <input className="py-1.5 w-full bg-transparent outline-none placeholder-gray-500" type="text" placeholder="Search products" />
@@ -133,13 +133,13 @@ function Navbar() {
    
       {off && (
         <div className="absolute mt-2 w-44 bg-white border border-gray-200 rounded shadow-lg">
-          <a href="/allproduct" className="block px-4 py-2 hover:bg-gray-100 rounded">All product</a>
+          <Link to={'/allproduct'}><h1 className="block px-4 py-2 hover:bg-gray-100 rounded">All product</h1></Link>
        
         </div>
       )}
     </div>
                
-                <a href="/quick" className="block">Quick enguiry</a>
+             <Link to={'/quick'}> <h1 className="block">Quick enguiry</h1> </Link>
                <div className='flex gap-3'>
                 
                   <Link to={'/signin'}>

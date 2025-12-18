@@ -6,8 +6,8 @@ function Signin() {
 
 
 
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-purple-400 via-pink-300 to-indigo-400 px-4">
-      <div className="bg-white rounded-3xl shadow-2xl max-w-md w-full p-8 relative overflow-hidden">
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-purple-400 via-pink-300 to-indigo-400 px-1">
+      <div className="bg-white rounded-3xl shadow-2xl max-w-md w-full p-6 relative overflow-hidden">
         {/* Floating Circles */}
         <div className="absolute -top-16 -left-16 w-40 h-40 bg-purple-300 rounded-full opacity-50 animate-pulseSlow"></div>
         <div className="absolute -bottom-16 -right-16 w-60 h-60 bg-pink-300 rounded-full opacity-40 animate-pulseSlow"></div>
@@ -53,7 +53,7 @@ function Signin() {
           </div>
 
               {/* signup page navigation */}
-          <div className='flex justify-between'>
+          <div className='flex justify-between sm:gap-0  '>
             <a href="/" className='text-indigo-600 mt-4 text-xs'>Back to Home</a>
              <p className="text-gray-500/90 text-sm mt-4 text-center">Don’t have an account? <a className="text-indigo-400 hover:underline" href="/signup">Sign up</a></p>
           </div>
