@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Signin() {
   return (
@@ -55,7 +56,7 @@ function Signin() {
               {/* signup page navigation */}
           <div className='flex justify-between sm:gap-0  '>
             <a href="/" className='text-indigo-600 mt-4 text-xs'>Back to Home</a>
-             <p className="text-gray-500/90 text-sm mt-4 text-center">Don’t have an account? <a className="text-indigo-400 hover:underline" href="/signup">Sign up</a></p>
+             <p className="text-gray-500/90 text-sm mt-4 text-center">Don’t have an account? <Link to={'/signup'}><a className="text-indigo-400 hover:underline" >Sign up</a></Link></p>
           </div>
 
           {/* Sign In Button */}

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Signup() {
   return (
@@ -64,7 +65,7 @@ function Signup() {
             {/* signin page navigation */}
           <div className='flex justify-between'>
              <a href="/" className='text-indigo-600 mt-4 text-xs'>Back to Home</a>
-             <p className="text-gray-500/90 text-sm mt-4 text-center">Don’t have an account? <a className="text-indigo-400 hover:underline" href="/signin">Sign in</a></p>
+             <p className="text-gray-500/90 text-sm mt-4 text-center">Don’t have an account? <Link to={'/signin'}><a className="text-indigo-400 hover:underline" >Sign in</a></Link></p>
           </div>
 
           {/* Sign In Button */}
