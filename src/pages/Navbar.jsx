@@ -43,7 +43,7 @@ function Navbar() {
    
       {off && (
         <div className="absolute mt-2 w-44 bg-white border border-gray-200 rounded shadow-lg">
-          <a href="/allproduct" className="block px-4 py-2 hover:bg-gray-100 rounded">All product</a>
+         <Link to={'/allproduct'}> <h1 className="block px-4 py-2 hover:bg-gray-100 rounded">All product</h1></Link>
        
         </div>
       )}
